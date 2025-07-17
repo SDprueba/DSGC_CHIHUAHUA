@@ -1,0 +1,51 @@
+/* RESPONSIVIAD EN DISPOSITIVOS PEQUEÑOS */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container {
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.125rem solid #ddd;
+        margin-top: 3.125rem;
+        height: auto;
+    }
+
+    .content {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .file-list {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 3.125rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .folder {
+        font-size: 0.875rem; 
+        padding: 0.5rem;
+    }
+
+    .file-list li {
+        padding: 0.5rem;
+    }
+}
